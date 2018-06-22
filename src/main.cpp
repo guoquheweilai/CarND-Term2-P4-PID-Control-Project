@@ -37,7 +37,7 @@ int main()
   //pid.Init(1.0, 1.0, 1.0); // Need to tune on the Simulator or using twiddle method?
   
   // PD only
-  pid.Init(0.15, 0.0, 3.2); // Need to tune on the Simulator or using twiddle method?
+  pid.Init(0.15, 0.0, 2.8); // Need to tune on the Simulator or using twiddle method?
 
   //// PID
   //pid.Init(0.1, 0.2, 3.0); // Need to tune on the Simulator or using twiddle method?
@@ -55,9 +55,9 @@ int main()
         if (event == "telemetry") {
           // j[1] is the data JSON object
           double cte = std::stod(j[1]["cte"].get<std::string>());
-          double speed = std::stod(j[1]["speed"].get<std::string>());
-          double angle = std::stod(j[1]["steering_angle"].get<std::string>());
-          double steer_value;
+          //double speed = std::stod(j[1]["speed"].get<std::string>());
+          //double angle = std::stod(j[1]["steering_angle"].get<std::string>());
+          double steer_value = 0.0;
           /*
           * TODO: Calcuate steering value here, remember the steering value is
           * [-1, 1].
