@@ -37,7 +37,7 @@ There's an experimental patch for windows in this [PR](https://github.com/udacit
 5. Build and run your code.  
 Tips for setting up your environment can be found [here](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/23d376c7-0195-4276-bdf0-e02f1f3c665d)  
 ## Project Description  
-- [main.cpp](./src/main.cpp):Reads in data, calls a function to initialize and run the PID controller on steering angle with tuned PD hyperparameters.  
+- [main.cpp](./src/main.cpp):Reads in data, calls a function to initialize and run the PID controller on steering angle with tuned PID hyperparameters.  
 - [PID.cpp](./src/ukf.cpp): Initializes the PID controller, calls the error update and total error calculation functions, defines the  `Init()`, `UpdateError()` and `TotalError()` functions.  
 - [README.md](./README.md): Writeup for this project, including setup, running instructions and project rubric addressing.  
 - [CMakeLists.txt](./CMakeLists.txt): `CMakeLists.txt` file that will be used when compiling your code (you do not need to change this file)
